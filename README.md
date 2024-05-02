@@ -131,11 +131,4 @@ If you make use of this code in your own work, please cite our paper:
     year={2024},
     url={https://openreview.net/forum?id=7VPTUWkiDQ}
 }
-
-@article{wiedemer2023provable,
-  title={Provable Compositional Generalization for Object-Centric Learning},
-  author={Wiedemer, Thadd{\"a}us and Brady, Jack and Panfilov, Alexander and Juhos, Attila and Bethge, Matthias and Brendel, Wieland},
-  journal={arXiv preprint arXiv:2310.05327},
-  year={2023}
-}
 ```
