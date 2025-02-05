@@ -6,8 +6,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Start training.")
     parser.add_argument(
         "--device",
-        choices=["cuda", "cpu"],
-        default="cuda",
+        choices=["cuda", "cpu","mps"],
+        default="mps",
         help="Device to use. Either 'cpu' or 'cuda'.",
     )
     parser.add_argument(
@@ -34,7 +34,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--dataset_path",
         type=str,
-        default="data",
+        default="notebooks/data_path",
         help="Path to the dataset folder.",
     )
     parser.add_argument(

@@ -58,9 +58,7 @@ def image_r2_score(true_images: torch.Tensor, predicted_images: torch.Tensor) ->
         reconstruction_error: R2 score
     """
 
-    r2_vw = R2Score(
-        num_outputs=np.prod(true_images.shape[1:]), multioutput="variance_weighted"
-    ).to(true_images.device)
+    r2_vw = R2Score(multioutput="variance_weighted").to(true_images.device)
 
     # add eps to avoid division by zero
     true_images += 1e-7
